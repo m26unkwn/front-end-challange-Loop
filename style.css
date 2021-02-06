@@ -1,0 +1,114 @@
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Alata', sans-serif;
+    Font-size: 15px;
+}
+.hero{
+    padding: 4rem 8rem;
+    background: url("./images/desktop/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar li{
+    display: inline;
+    color: hsl(0, 18%, 97%);
+    margin: 0 1rem;
+    cursor: pointer;
+}
+.navbar li:hover {
+    transition: all .1s ease-in;
+    border-bottom: solid white 2px;
+}
+.text-intro{
+    border: solid white 2px;
+    width: 60%;
+    margin-top:9rem;
+    padding: 2rem 1rem;
+    color: white;
+    line-height: 0.95;
+    overflow: hidden;
+}
+.text-intro h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 5rem;
+}
+/*Product section */
+
+.tagline{
+    display: flex;
+    margin: 7rem;
+}
+
+.img{
+    width: 100%;
+    overflow: hidden;
+}
+.text{
+    background: white;
+    position: absolute;
+    margin-top: 14rem;
+    right:4.5%;
+    width: 45%;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 5rem;
+
+}
+.text h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    color: black;
+}
+.text p{
+    font-weight: 300;
+    color:hsl(0, 0%, 55%)
+}
+/*Grid Section Start*/
+.grid{
+    margin: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+
+.grid h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    color: black;
+}
+.btn{
+    font-family: 'Alata', sans-serif;
+    font-size: 1rem;
+    padding: 0.8rem 2.5rem;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    font-size: 1rem;
+    font-weight: 300;
+
+}
+.btn:hover{
+    
+    transition: .3s ease-out;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+/*Grid Section Photos And Actual Grid*/
+
