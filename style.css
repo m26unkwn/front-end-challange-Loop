@@ -21,16 +21,34 @@ header{
     display: flex;
     justify-content: space-between;
 }
-.navbar li{
-    display: inline;
-    color: hsl(0, 18%, 97%);
-    margin: 0 1rem;
-    cursor: pointer;
+ li {
+    display: inline-block;
+    position: relative;
+    padding: .75rem;
+    text-decoration: none;
 }
-.navbar li:hover {
-    transition: all .1s ease-in;
-    border-bottom: solid white 2px;
+a{
+    color: white;
+    text-decoration: none;
 }
+.navbar li a::after {
+	border-bottom: 2px white solid;
+	content: "";
+	position: absolute;
+	top: 20px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+  width: 0;
+  transition: .25s ease-in-out;
+}
+
+.navbar li a:hover::after {
+	width: 50%;
+  cursor: pointer;
+}
+
 .text-intro{
     border: solid white 2px;
     width: 60%;
@@ -111,9 +129,9 @@ header{
     border: 1px solid white;
 }
 /*Grid Section Photos And Actual Grid*/
-}
 
-.creation{
+
+.creations{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -167,9 +185,9 @@ header{
   opacity: 0.2;
 }
 .creation-item p{
-    font-family: 'Alata', sans-serif;
-    font-size: large;
-    color: darkgray;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    color: white;
 }
 .creation-item:hover p {
   color: black;
@@ -178,3 +196,54 @@ header{
 .creation-item:hover::after {
   box-shadow: none;
 }
+
+/* Footer */
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem;
+  }
+  
+  footer > * {
+    width: 50%;
+    padding-bottom: 2rem;
+  }
+  
+  footer nav {
+    font-size: 1.2rem;
+    justify-content: space-between;
+    width: 40%;
+  }
+  
+  footer #logo {
+    font-size: 2.5rem;
+  }
+  
+  footer ul {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  footer .copyright {
+    color: darkgray;
+    font-size: 1.2rem;
+    text-align: right;
+  }
+  .attribution{
+    font-size: 11px;
+    text-align: center;
+    background-color: black;
+    color: darkgray;
+  }
+  .attribution a{
+    font-size: 11px;
+    text-align: center;
+    background-color: black;
+    color: darkgray;
+  }
