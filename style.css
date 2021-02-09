@@ -111,4 +111,70 @@ header{
     border: 1px solid white;
 }
 /*Grid Section Photos And Actual Grid*/
+}
 
+.creation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 7rem;
+}
+.creation-item {
+  position: relative;
+  margin: 0.8rem 0;
+}
+
+.creation-item .img-container {
+  position: relative;
+}
+
+.creation-item::after {
+  content: '';
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  bottom: 0.5rem; 
+  right: 0;
+  box-shadow: inset 0px 0px 150px black;
+  transition: box-shadow .15s ease-in;
+}
+
+.creation-item img {
+  transition: opacity .25s ease-in;
+}
+
+.creations p {
+  display: inline-block;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 7.2%;
+  left: 17%;
+  /*! font-size: 3rem; */
+  /*! color: var(--white); */
+  /*! transition: color .25s ease-in; */
+  /*! z-index: 1; */
+}
+
+.creation-item:hover,
+.creation-item:hover img,
+.creation-item:hover ~ p,
+.creation-item:hover::after,
+.creations p:hover {
+  cursor: pointer;
+}
+
+.creation-item:hover img {
+  opacity: 0.2;
+}
+.creation-item p{
+    font-family: 'Alata', sans-serif;
+    font-size: large;
+    color: darkgray;
+}
+.creation-item:hover p {
+  color: black;
+}
+
+.creation-item:hover::after {
+  box-shadow: none;
+}
